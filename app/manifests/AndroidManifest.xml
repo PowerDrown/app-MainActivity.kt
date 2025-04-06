@@ -1,12 +1,3 @@
-Ótima pergunta! Para esse app simples de caixa eletrônico, o AndroidManifest.xml pode ser o padrão mesmo, apenas garantindo que sua MainActivity esteja declarada corretamente como a principal (com intent-filter).
-
-Aqui está um exemplo básico de como o AndroidManifest.xml deve ficar:
-
-
----
-
-✅ AndroidManifest.xml
-
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.caixaeletronico">
