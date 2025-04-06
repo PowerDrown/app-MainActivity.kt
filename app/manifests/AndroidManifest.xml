@@ -1,0 +1,31 @@
+Ótima pergunta! Para esse app simples de caixa eletrônico, o AndroidManifest.xml pode ser o padrão mesmo, apenas garantindo que sua MainActivity esteja declarada corretamente como a principal (com intent-filter).
+
+Aqui está um exemplo básico de como o AndroidManifest.xml deve ficar:
+
+
+---
+
+✅ AndroidManifest.xml
+
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.caixaeletronico">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Caixa Eletrônico"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.CaixaEletronico">
+        
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+
+    </application>
+
+</manifest>
